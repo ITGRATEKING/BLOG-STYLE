@@ -552,9 +552,12 @@ background: #f0f0f0;
 
 /* PC에서는 완전히 숨김 */
 @media screen and (min-width: 769px) {
+#pc-toc-container,
+.pc-toc-card,
+#pc-toc-toggle-btn,
 #mobile-toc-container,
-.mobile-toc-card,
-#mobile-toc-toggle-btn {
+.mobile-toc-card,    
+#mobile-toc-toggle-btn{
 display: none !important;
 }
 }
@@ -776,7 +779,10 @@ background: #f0f0f0;
 @media screen and (max-width: 768px) {
 #pc-toc-container,
 .pc-toc-card,
-#pc-toc-toggle-btn {
+#pc-toc-toggle-btn,
+#mobile-toc-container,
+.mobile-toc-card,    
+#mobile-toc-toggle-btn{
 display: none !important;
 }
 }
