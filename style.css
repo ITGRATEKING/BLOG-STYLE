@@ -605,67 +605,64 @@ visibility: visible;
 
 /* PC 목차 스타일 */
 .pc-custom-toc {
-padding: 30px 25px;
-background: rgba(240, 240, 240, 0.95);
-font-size: 15px;
-height: 100%;
+background: #fff5f0;
+  border: 1px solid #f0e0d9;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 15px;
+  overflow-y: auto;
+  max-height: 80vh;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .pc-toc-header {
-text-align: left;
-font-weight: bold;
-padding: 18px 0;
-border-bottom: 2px solid #DD3333F2;
-margin-bottom: 25px;
 display: flex;
-align-items: center;
-justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 16px;
+  background: #fff0ea;
+  border-bottom: 1px solid #f2d8d0;
 }
 
 .pc-toc-title {
-font-size: 20px;
-color: #333;
-display: flex;
-align-items: center;
+ display: flex;
+  align-items: center;
+  color: #333;
 }
 
 .pc-custom-toc ul {
-list-style: none;
-padding: 0;
-margin: 0;
+ list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pc-custom-toc li {
-padding: 18px 15px;
-margin-bottom: 8px;
-background: rgba(255, 255, 255, 0.8);
-border-radius: 8px;
-transition: all 0.3s ease;
-cursor: pointer;
-border-left: 4px solid transparent;
-word-wrap: break-word;
-backdrop-filter: blur(5px);
+ padding: 12px 16px;
+  margin: 0;
+  font-size: 14px;
+  color: #222;
+  border-bottom: 1px solid #f0e0d9;
+  transition: background 0.2s ease;
+  cursor: pointer;
 }
 
 .pc-custom-toc li.active {
-background: #DD3333F2;
-color: white;
-font-weight: bold;
-border-left-color: #fff;
+ background: #dd3333f2;
+  color: white;
+  font-weight: bold;
 }
 
 .pc-custom-toc li a {
-color: inherit;
-text-decoration: none;
-display: block;
-width: 100%;
-font-size: 15px;
+ color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
 }
 
 .pc-custom-toc li:hover {
-background: rgba(255, 255, 255, 1);
-border-left-color: #DD3333F2;
-transform: translateX(5px);
+ background: #fff;
 }
 
 .pc-custom-toc li.active:hover {
